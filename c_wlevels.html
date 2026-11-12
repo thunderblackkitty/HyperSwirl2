@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyclone & Wind Levels | HyperSwirl</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#" class="navlogo" aria-label="HyperSwirl home">
+        <img src="logo.png" alt="HyperSwirl Logo" class="nav-logo-image">
+        <span>Hyper<span class="logo-accent">Swirl</span></span>
+    </a>
+
+      <div class="navbar" id="navbar">
+        <ul class="navlist">
+          <li class="navitem">
+            <a href="index.html" class="navlinks" aria-current="page">
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="navitem">
+            <a href="abtus.html" class="navlinks">
+              <span>About Us</span>
+            </a>
+          </li>
+          <li class="navitem">
+            <a href="hoc.html" class="navlinks">
+              <span>History of Cyclones</span>
+            </a>
+          </li>
+          <li class="navitem dropdown" id="safety-dropdown">
+            <button class="navlinks active dropdown-trigger" id="dropdown-trigger" type="button" aria-expanded="false" aria-controls="dropdown-menu">
+              <span>Emergency &amp; Safety</span>
+              <i class="ri-arrow-down-s-line dropdown-icon"></i>
+            </button>
+            <ul class="dropdown-menu" id="dropdown-menu">
+              <li><a href="wnupdates.html">Warnings &amp; Updates</a></li>
+              <li><a href="c_wlevels.html">Cyclone &amp; Wind Levels</a></li>
+              <li><a href="cprepare.html">Cyclone Preparation</a></li>
+              <li><a href="emergencyc.html">Emergency Contacts</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="action-btn" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Toggle light and dark mode">
+            <i class="ri-moon-line" id="theme-icon" aria-hidden="true"></i>
+          </button>
+          <a href="login.html" class="login-btn">Login</a>
+        </div>
+
+        <button class="navclose" id="navclose" type="button" aria-label="Close menu">
+          <i class="ri-close-large-line" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <button class="navtoggle" id="navtoggle" type="button"
+              aria-label="Open menu" aria-controls="navbar" aria-expanded="false">
+        <i class="ri-menu-line" aria-hidden="true"></i>
+      </button>
+    </nav>
+  </header>
+
+  <div class="flex-grow-1 py-5">
+        <div class="container cyclone-container" style="max-width: 1000px;">
+            <header class="p-4 p-md-5 rounded-4 bg-nav-box border shadow-sm mb-4">
+                <span class="badge rounded-pill bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 mb-3">MYANMAR CYCLONE GUIDE</span>
+                <h1 class="display-5 fw-bold mb-3">Cyclone &amp; Wind Levels</h1>
+                <p class="lead mb-4">
+                    What do wind categories mean, how can a cyclone affect different areas, and what should you do when a warning arrives?
+                </p>
+                <div class="d-flex flex-wrap gap-2">
+                    <a class="btn btn-primary rounded-pill px-4 py-2 fw-semibold" href="#wind-levels">Explore wind levels</a>
+                    <a class="btn btn-outline-secondary rounded-pill px-4 py-2 fw-semibold" href="https://www.moezala.gov.mm/en/cyclone-warning" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-broadcast-pin me-2" aria-hidden="true"></i>Live DMH warnings
+                    </a>
+                </div>
+                <p class=" small mt-3 mb-0">An educational guide, not a live forecast or warning.</p>
+            </header>
+
+            <aside class="p-3 p-md-4 rounded-4 mb-5 border shadow-sm" aria-label="Important warning">
+                <div class="d-flex align-items-start gap-3">
+                    <i class="bi bi-info-circle-fill text-primary fs-4" aria-hidden="true"></i>
+                    <div>
+                        <h2 class="h6 fw-bold mb-1">This page is a guide, not a live alert</h2>
+                        <p class="small mb-0">Cyclone warnings can change quickly. Use the latest DMH bulletin and follow instructions from local authorities; do not rely on an old post or this page to decide safety.</p>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="mb-5" id="wind-levels" aria-labelledby="strength-title">
+                <div class="mb-3">
+                    <span class="text-primary small fw-bold text-uppercase">01 / Understanding Cyclone Strength</span>
+                    <h2 class="h3 fw-bold mt-1 mb-1" id="strength-title">What do the levels mean?</h2>
+                    <p class="small mb-0">In the Bay of Bengal, the regional IMD/RSMC scale groups cyclonic systems by their sustained wind speeds.</p>
+                </div>
+                <div class="table-responsive rounded-4 border shadow-sm">
+                    <table class="table align-middle mb-0">
+                        <caption class="visually-hidden">Bay of Bengal cyclone categories and approximate sustained wind speed ranges</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col" class="py-3 px-4">System category</th>
+                                <th scope="col" class="py-3 px-4">Wind speed</th>
+                                <th scope="col" class="py-3 px-4">In plain language</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><th scope="row" class="py-3 px-4">Depression</th><td class="py-3 px-4 text-primary fw-semibold">31–49 km/h</td><td class="py-3 px-4 text-muted small">Organized rain and winds; conditions at sea can become rough.</td></tr>
+                            <tr><th scope="row" class="py-3 px-4">Deep depression</th><td class="py-3 px-4 text-primary fw-semibold">50–61 km/h</td><td class="py-3 px-4 text-muted small">Stronger winds and heavier rain are possible near the system.</td></tr>
+                            <tr><th scope="row" class="py-3 px-4">Cyclonic storm</th><td class="py-3 px-4 text-primary fw-semibold">62–88 km/h</td><td class="py-3 px-4 text-muted small">Damaging gusts, downed branches, and localized flooding may occur.</td></tr>
+                            <tr><th scope="row" class="py-3 px-4">Severe cyclonic storm</th><td class="py-3 px-4 text-primary fw-semibold">89–117 km/h</td><td class="py-3 px-4 text-muted small">Roof and tree damage and widespread travel disruption become more likely.</td></tr>
+                            <tr><th scope="row" class="py-3 px-4">Very severe cyclonic storm</th><td class="py-3 px-4 text-primary fw-semibold">118–166 km/h</td><td class="py-3 px-4 text-muted small">Serious wind damage, dangerous coastal conditions, and power outages are possible.</td></tr>
+                            <tr><th scope="row" class="py-3 px-4">Extremely severe cyclonic storm</th><td class="py-3 px-4 text-primary fw-semibold">167–221 km/h</td><td class="py-3 px-4 text-muted small">Very destructive winds and major impacts are possible near the storm’s path.</td></tr>
+                            <tr><th scope="row" class="py-3 px-4">Super cyclonic storm</th><td class="py-3 px-4 text-primary fw-semibold">222 km/h+</td><td class="py-3 px-4 text-muted small">Exceptionally destructive winds; follow official instructions immediately.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="small mt-3 mb-0">
+                    These are category ranges, not a local forecast. Wind values refer to sustained winds; short gusts can be stronger.
+                </p>
+            </section>
+
+            <section class="mb-5" aria-labelledby="impacts-title">
+                <div class="mb-3">
+                    <span class="text-primary small fw-bold text-uppercase">02 / Possible Impacts</span>
+                    <h2 class="h3 fw-bold mt-1 mb-1" id="impacts-title">Wind is only one part of the danger</h2>
+                    <p class="small mb-0">A cyclone can bring several hazards at once. Your area may be affected even if the center does not pass directly overhead.</p>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-6 col-lg-3">
+                        <article class="p-4 rounded-4 bg-nav-box border h-100 shadow-sm">
+                            <i class="bi bi-wind text-primary fs-4" aria-hidden="true"></i>
+                            <h3 class="h6 fw-bold mt-3">Strong winds</h3>
+                            <p class="small mb-0">Loose objects become dangerous; trees, signs, roofs, and power lines may be damaged.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <article class="p-4 rounded-4 bg-nav-box border h-100 shadow-sm">
+                            <i class="bi bi-cloud-rain-heavy text-primary fs-4" aria-hidden="true"></i>
+                            <h3 class="h6 fw-bold mt-3">Heavy rain</h3>
+                            <p class="small mb-0">Flooding and landslides can happen, including inland and after strongest winds pass.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <article class="p-4 rounded-4 bg-nav-box border h-100 shadow-sm">
+                            <i class="bi bi-water text-primary fs-4" aria-hidden="true"></i>
+                            <h3 class="h6 fw-bold mt-3">Coastal hazards</h3>
+                            <p class="small mb-0">High waves and storm surge can quickly flood low-lying coastal regions.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <article class="p-4 rounded-4 bg-nav-box border h-100 shadow-sm">
+                            <i class="bi bi-lightning-charge text-primary fs-4" aria-hidden="true"></i>
+                            <h3 class="h6 fw-bold mt-3">Daily disruptions</h3>
+                            <p class="small mb-0">Roads, electricity, phone services, and local routines may be interrupted.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="p-4 p-md-5 rounded-4 mb-5 bg-nav-box border shadow-sm" aria-labelledby="history-title">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-8">
+                        <span class="text-primary small fw-bold text-uppercase">A Past Example — Not a Current Warning</span>
+                        <h2 class="h3 fw-bold mt-1 mb-2" id="history-title">Cyclone Mocha, May 2023</h2>
+                        <p class="small mb-0">
+                            On 14 May 2023, the Bay of Bengal regional centre described Mocha as an Extremely Severe Cyclonic Storm as it approached Sittwe, bringing sustained winds of 180–190 km/h and gusts up to 210 km/h. This example highlights why both storm category and local alerts matter.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <div class="p-3 rounded-4 border shadow-sm">
+                            <span class="small">Reported sustained wind</span>
+                            <strong class="d-block h3 fw-bold text-primary mb-0">180–190 km/h</strong>
+                            <span class="d-block small mt-1">Gusts up to 210 km/h</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-5" aria-labelledby="region-title">
+                <div class="mb-3">
+                    <span class="text-primary small fw-bold text-uppercase">Why Location Matters</span>
+                    <h2 class="h3 fw-bold mt-1 mb-1" id="region-title">The same storm affects places differently</h2>
+                    <p class="small mb-0">Local conditions matter as much as the storm category. Check which areas are named in bulletins.</p>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <article class="p-4 rounded-4 bg-nav-box border h-100 shadow-sm">
+                            <i class="bi bi-water text-primary fs-4 mb-2 d-block" aria-hidden="true"></i>
+                            <h3 class="h6 fw-bold">Coastal communities</h3>
+                            <p class="small mb-0">Strong winds and storm surge create serious danger near shorelines. Follow evacuation guidance.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="p-4 rounded-4 bg-nav-box border h-100 shadow-sm">
+                            <i class="bi bi-moisture text-primary fs-4 mb-2 d-block" aria-hidden="true"></i>
+                            <h3 class="h6 fw-bold">River &amp; low-lying areas</h3>
+                            <p class="small mb-0">Heavy rain can raise water levels quickly, even when strongest winds are further away.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="p-4 rounded-4 bg-nav-box border h-100 shadow-sm">
+                            <i class="bi bi-tree-fill text-primary fs-4 mb-2 d-block" aria-hidden="true"></i>
+                            <h3 class="h6 fw-bold">Inland communities</h3>
+                            <p class="small mb-0">Rain can trigger landslides and disrupt transport or power. Keep checking updates.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-5" id="safety-actions" aria-labelledby="actions-title">
+                <div class="mb-3">
+                    <span class="text-primary small fw-bold text-uppercase">03 / Safety Actions</span>
+                    <h2 class="h3 fw-bold mt-1 mb-1" id="actions-title">What can you do?</h2>
+                    <p class="small mb-0">Practical steps to help you prepare. Always follow local emergency instructions first.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <article class="p-4 rounded-4 bg-nav-box border h-100 shadow-sm">
+                            <span class="badge bg-primary mb-2">Step 01</span>
+                            <h3 class="h5 fw-bold mb-2">Before a warning</h3>
+                            <ul class="small ps-3 mb-0">
+                                <li class="mb-1">Know your safer places and routes.</li>
+                                <li class="mb-1">Prepare water, food, torch, and power banks.</li>
+                                <li>Secure loose items and protect documents.</li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="p-4 rounded-4 bg-nav-box border h-100 shadow-sm">
+                            <span class="badge bg-primary mb-2">Step 02</span>
+                            <h3 class="h5 fw-bold mb-2">When warned</h3>
+                            <ul class="small ps-3 mb-0">
+                                <li class="mb-1">Check latest DMH updates and inform family.</li>
+                                <li class="mb-1">Move to shelters if advised by authorities.</li>
+                                <li>Stay away from beaches and flooded rivers.</li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="p-4 rounded-4 bg-nav-box border h-100 shadow-sm">
+                            <span class="badge bg-primary mb-2">Step 03</span>
+                            <h3 class="h5 fw-bold mb-2">During &amp; after</h3>
+                            <ul class="small ps-3 mb-0">
+                                <li class="mb-1">Stay indoors away from windows until safe.</li>
+                                <li class="mb-1">Never walk or drive through floodwater.</li>
+                                <li>Avoid fallen wires and wait for an all-clear.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="p-4 rounded-4 border mb-5 shadow-sm" aria-labelledby="sources-title">
+                <h2 class="h6 fw-bold mb-3" id="sources-title"><i class="bi bi-book me-2 text-primary" aria-hidden="true"></i>Official updates and further reading</h2>
+                <ul class="list-unstyled small mb-0">
+                    <li class="mb-2"><a href="https://www.moezala.gov.mm/en/cyclone-warning" target="_blank" rel="noopener noreferrer" class="text-decoration-none fw-semibold">Myanmar Department of Meteorology and Hydrology (DMH) — Cyclone Warnings</a><span class="text-muted"> — Current bulletins.</span></li>
+                    <li class="mb-2"><a href="https://rsmcnewdelhi.imd.gov.in/" target="_blank" rel="noopener noreferrer" class="text-decoration-none fw-semibold">India Meteorological Department / RSMC New Delhi</a><span class="text-muted"> — Regional Bay of Bengal bulletins.</span></li>
+                    <li><a href="https://rsmcnewdelhi.imd.gov.in/images/pdf/damage.pdf" target="_blank" rel="noopener noreferrer" class="text-decoration-none fw-semibold">RSMC New Delhi — Damage Potential of Cyclones</a><span class="text-muted"> — Impact background.</span></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>Hyper<span>Swirl</span></h2>
+        <p>Your guide to understanding tropical cyclones, exploring their history, tracking storm warnings, and learning how to stay safe before, during, and after a storm.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Explore</h3>
+        <a href="index.html">Home</a>
+        <a href="abtus.html">About Us</a>
+        <a href="hoc.html">History of Cyclones</a>
+        <a href="wnupdates.html">Warnings & Updates</a>
+        <a href="c_wlevels.html">Cyclone & Wind Levels</a>
+        <a href="cprepare.html">Cyclone Preparation</a>
+        <a href="emergencyc.html">Emergency Contacts</a>
+      </div>
+
+      <div class="footer-links">
+        <h3>Get in Touch</h3>
+        <p><i class="ri-mail-line"></i> hyperswirl@gmail.com</p>
+        <p><i class="ri-phone-line"></i> +44 1632 960142</p>
+        <p>Have questions or suggestions? We'd love to hear from you.</p>
+        <div class="social">
+          <a href=""><i class="ri-instagram-line"></i></a>
+          <a href=""><i class="ri-tiktok-fill"></i></a>
+          <a href=""><i class="ri-facebook-circle-fill"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 HyperSwirl. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="java.js"></script>
+</body>
+</html>
+

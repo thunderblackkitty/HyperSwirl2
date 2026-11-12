@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | HyperSwirl</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#" class="navlogo" aria-label="HyperSwirl home">
+        <img src="logo.png" alt="HyperSwirl Logo" class="nav-logo-image">
+        <span>Hyper<span class="logo-accent">Swirl</span></span>
+    </a>
+
+      <div class="navbar" id="navbar">
+        <ul class="navlist">
+          <li class="navitem">
+            <a href="index.html" class="navlinks" aria-current="page">
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="navitem">
+            <a href="abtus.html" class="navlinks active">
+              <span>About Us</span>
+            </a>
+          </li>
+          <li class="navitem">
+            <a href="hoc.html" class="navlinks">
+              <span>History of Cyclones</span>
+            </a>
+          </li>
+          <li class="navitem dropdown" id="safety-dropdown">
+            <button class="navlinks dropdown-trigger" id="dropdown-trigger"
+                    type="button" aria-expanded="false" aria-controls="dropdown-menu">
+              <span>Emergency &amp; Safety</span>
+              <i class="ri-arrow-down-s-line dropdown-icon"></i>
+            </button>
+            <ul class="dropdown-menu" id="dropdown-menu">
+              <li><a href="wnupdates.html">Warnings &amp; Updates</a></li>
+              <li><a href="c_wlevels.html">Cyclone &amp; Wind Levels</a></li>
+              <li><a href="cprepare.html">Cyclone Preparation</a></li>
+              <li><a href="emergencyc.html">Emergency Contacts</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="action-btn" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Toggle light and dark mode">
+            <i class="ri-moon-line" id="theme-icon" aria-hidden="true"></i>
+          </button>
+          <a href="login.html" class="login-btn">Login</a>
+        </div>
+
+        <button class="navclose" id="navclose" type="button" aria-label="Close menu">
+          <i class="ri-close-large-line" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <button class="navtoggle" id="navtoggle" type="button"
+              aria-label="Open menu" aria-controls="navbar" aria-expanded="false">
+        <i class="ri-menu-line" aria-hidden="true"></i>
+      </button>
+    </nav>
+    </header>
+
+    <div class="flex-grow-1 py-5">
+        <div class="container" style="max-width: 1050px;">
+
+            <div class="row g-4 mb-5 align-items-stretch">
+
+                <div class="col-lg-4">
+                    <div class="p-4 rounded-4 bg-nav-box border shadow-sm h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold mb-3 text-uppercase small">At a glance</h5>
+                            <ul class="list-unstyled d-flex flex-column gap-3 mb-4">
+                                <li class="d-flex align-items-center gap-2 small">
+                                    <span class="badge bg-primary p-1 rounded-circle"></span> All safety &amp; preparation in one place
+                                </li>
+                                <li class="d-flex align-items-center gap-2 small">
+                                    <span class="badge bg-primary p-1 rounded-circle"></span> Clear guidance &amp; weather warnings
+                                </li>
+                                <li class="d-flex align-items-center gap-2 small">
+                                    <span class="badge bg-primary p-1 rounded-circle"></span> Made for Myanmar &amp; Southeast Asia
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="d-flex flex-column gap-2">
+                            <a href="index.html" class="btn btn-primary rounded-pill fw-semibold shadow-sm">Explore HyperSwirl</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="about-hero p-5 rounded-4 bg-nav-box border shadow-sm h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill px-3 py-1 mb-3 fw-semibold">ABOUT US</span>
+                            <h1 class="display-5 fw-bold mb-3">HyperSwirl</h1>
+                            <p class="lead fs-6 mb-4">
+                                HyperSwirl brings together weather updates, storm alerts, and safety preparation tips into one place. We focus on taking complicated weather information and turning it into simple steps everyone can follow to stay safe during severe storms and floods.
+                            </p>
+                        </div>
+                        <div class="row g-3 pt-3 border-top">
+                            <div class="col-md-4">
+                                <h6 class="fw-bold mb-1">Our focus</h6>
+                                <p class="small mb-0">Floods, cyclones, and staying prepared.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h6 class="fw-bold mb-1">Our goal</h6>
+                                <p class="small mb-0">Making safety steps easy to read and follow.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h6 class="fw-bold mb-1">Our approach</h6>
+                                <p class="small mb-0">Simple, practical guides for everyday people.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="mission-vision mb-5" aria-labelledby="mission-vision-title">
+                <div class="d-flex flex-wrap justify-content-between align-items-end gap-2 mb-4">
+                    <div>
+                        <h2 class="fw-bold mb-1" id="mission-vision-title">Our Mission &amp; Vision</h2>
+                        <p class="mb-0">What we’re building with HyperSwirl.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <article class="mission-vision-card p-4 rounded-4 bg-nav-box border shadow-sm h-100">
+                            <span class="mission-vision-icon" aria-hidden="true"><i class="bi bi-compass"></i></span>
+                            <h3 class="h5 fw-bold mt-3 mb-2">Our Mission</h3>
+                            <p class="mb-0">
+                                To organize cyclone updates, flood details, and emergency prep guides into a simple website that helps people get ready before heavy weather hits.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="mission-vision-card p-4 rounded-4 bg-nav-box border shadow-sm h-100">
+                            <span class="mission-vision-icon mission-vision-icon-alt" aria-hidden="true"><i class="bi bi-eye"></i></span>
+                            <h3 class="h5 fw-bold mt-3 mb-2">Our Vision</h3>
+                            <p class="mb-0">
+                                To see communities where severe weather warnings are quick to understand and everyone feels confident knowing what to do in a storm.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-purpose mb-5" aria-labelledby="purpose-title">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="purpose-card p-4 p-md-5 rounded-4 bg-nav-box border shadow-sm">
+                            <h2 class="h3 fw-bold mb-3" id="purpose-title">
+                                <i class="bi bi-compass me-2 text-primary" aria-hidden="true"></i>Why we created this platform
+                            </h2>
+                            <p class="mb-3">
+                                When heavy rain or storms approach, weather bulletins can sometimes feel confusing or overwhelming. It isn't always obvious what a specific wind warning means or what exact steps to take next.
+                            </p>
+                            <p class="mb-4">
+                                HyperSwirl fixes that by gathering weather alerts, safety checklists, and emergency contacts in one clean place so you can quickly find what you need and focus on staying safe.
+                            </p>
+                            <div class="d-flex align-items-center gap-3 pt-3 border-top">
+                                <span class="purpose-icon purpose-icon-blue" aria-hidden="true"><i class="bi bi-lightning-charge-fill"></i></span>
+                                <div>
+                                    <h3 class="h6 fw-bold mb-1">Simple &amp; fast to load</h3>
+                                    <p class=" small mb-0">Designed to be light and clear on both phones and computers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <span class="small fw-bold text-primary text-uppercase">Overview</span>
+                        <h2 class="display-6 fw-bold mt-2 mb-4">What you’ll find on HyperSwirl</h2>
+                        <div class="d-flex flex-column gap-3">
+                            <article class="purpose-feature d-flex align-items-center gap-3 p-3 p-md-4 rounded-4 bg-nav-box border">
+                                <span class="purpose-icon purpose-icon-blue" aria-hidden="true"><i class="bi bi-cloud-rain-fill"></i></span>
+                                <div>
+                                    <h3 class="h5 fw-bold mb-1">Flood &amp; rain details</h3>
+                                    <p class="small mb-0">Clear breakdowns of heavy rain risk and water level safety.</p>
+                                </div>
+                            </article>
+                            <article class="purpose-feature d-flex align-items-center gap-3 p-3 p-md-4 rounded-4 bg-nav-box border">
+                                <span class="purpose-icon purpose-icon-cyan" aria-hidden="true"><i class="bi bi-wind"></i></span>
+                                <div>
+                                    <h3 class="h5 fw-bold mb-1">Cyclone levels explained</h3>
+                                    <p class="small mb-0">An easier way to make sense of storm categories and wind warnings.</p>
+                                </div>
+                            </article>
+                            <article class="purpose-feature d-flex align-items-center gap-3 p-3 p-md-4 rounded-4 bg-nav-box border">
+                                <span class="purpose-icon purpose-icon-green" aria-hidden="true"><i class="bi bi-clipboard2-check-fill"></i></span>
+                                <div>
+                                    <h3 class="h5 fw-bold mb-1">Preparation checklists</h3>
+                                    <p class="small mb-0">Handy reminders for packing emergency supplies and securing your home.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="mb-5">
+                <div class="d-flex justify-content-between align-items-end mb-4">
+                    <div>
+                        <h2 class="fw-bold mb-1">What matters to us</h2>
+                        <p class="mb-0">The main ideas behind HyperSwirl.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="p-4 rounded-4 bg-nav-box border shadow-sm h-100">
+                            <h4 class="fw-bold mb-3"><i class="bi bi-eye text-primary me-2"></i>Clear information</h4>
+                            <p class="mb-0">
+                                Turning storm reports and flood warnings into direct language so anyone can understand the situation quickly.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-4 rounded-4 bg-nav-box border shadow-sm h-100">
+                            <h4 class="fw-bold mb-3"><i class="bi bi-people text-primary me-2"></i>Community safety</h4>
+                            <p class="mb-0">
+                                Making tips and guidance easy to share so families and friends can look out for one another.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-5">
+                <div class="d-flex justify-content-between align-items-end mb-4">
+                    <div>
+                        <h2 class="fw-bold mb-1">Meet the team</h2>
+                        <p class="mb-0">The developers building HyperSwirl.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="p-4 rounded-4 bg-nav-box border shadow-sm text-center h-100">
+                            <img src="Image.jfif" alt="picture" style="border-radius: 10px; margin-bottom: 3px;">
+                            <h5 class="fw-bold mt-3 mb-1">Thant Thurein</h5>
+                            <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-1 mb-2 small">Member</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4 rounded-4 bg-nav-box border shadow-sm text-center h-100">
+                            <img src="Image (2).jfif" alt="picture" style="border-radius: 10px; margin-bottom: 3px;">
+                            <h5 class="fw-bold mt-3 mb-1">Shinn Khant</h5>
+                            <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-1 mb-2 small">Member</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4 rounded-4 bg-nav-box border shadow-sm text-center h-100">
+                            <img src="Image (1).jfif" alt="picture" style="border-radius: 10px; margin-bottom: 3px;">
+                            <h5 class="fw-bold mt-3 mb-1">Phyo Shwesin Htet</h5>
+                            <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-1 mb-2 small">Member</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-5">
+                <div class="d-flex justify-content-between align-items-end mb-4">
+                    <div>
+                        <h2 class="fw-bold mb-1">How we put this together</h2>
+                        <p class="mb-0">Our process for designing and updating the site.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="p-4 rounded-4 bg-nav-box border shadow-sm h-100">
+                            <h5 class="fw-bold mb-2">1. Topic research</h5>
+                            <p class="small mb-0">We look at common weather risks and find the exact safety information people need most during a storm.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4 rounded-4 bg-nav-box border shadow-sm h-100">
+                            <h5 class="fw-bold mb-2">2. Building the pages</h5>
+                            <p class="small mb-0">We write clean code to lay out information in a simple structure that's easy to read.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4 rounded-4 bg-nav-box border shadow-sm h-100">
+                            <h5 class="fw-bold mb-2">3. Testing &amp; tweaking</h5>
+                            <p class="small mb-0">We check how the site works on different devices and keep making changes to improve it.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-5">
+                <div class="d-flex justify-content-between align-items-end mb-4">
+                    <div>
+                        <h2 class="fw-bold mb-1">Quick questions</h2>
+                        <p class="mb-0">A few helpful things to know about HyperSwirl.</p>
+                    </div>
+                </div>
+                <div class="accordion accordion-custom shadow-sm rounded-4 overflow-hidden border" id="aboutFaq">
+                    <div class="accordion-item border-0 border-bottom">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button fw-semibold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                What is HyperSwirl for?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#aboutFaq">
+                            <div class="accordion-body small">
+                                It’s a website created to put weather warnings, cyclone details, and flood preparation steps into simple, easy-to-read pages.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 border-bottom">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-semibold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                Is this an official weather forecasting service?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#aboutFaq">
+                            <div class="accordion-body small">
+                                No, HyperSwirl is an informational guide. During active weather emergencies, please make sure to follow local emergency authorities and official weather broadcasts.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-semibold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                What can I learn on this site?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#aboutFaq">
+                            <div class="accordion-body small">
+                                You can check out information on flood risks, cyclone wind levels, preparation checklists, and emergency contact details.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-5 rounded-4 bg-nav-box border shadow-sm text-start mb-5">
+                <h3 class="fw-bold mb-2">Thanks for visiting!</h3>
+                <p class="mb-4" style="max-width: 600px;">
+                    Feel free to look around HyperSwirl and explore our guides on weather safety and storm preparation.
+                </p>
+                <div class="d-flex gap-3">
+                    <a href="index.html" class="btn btn-primary rounded-pill px-4 fw-semibold shadow-sm">Go to Home</a>
+                    <a href="#purpose-title" class="btn btn-outline-secondary rounded-pill px-4 fw-semibold">Why we created this</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="contact-section" id="contacts">
+
+    <div class="contact-container">
+
+        <!-- LEFT SIDE -->
+        <div class="contact-info">
+
+            <span class="contact-label">GET IN TOUCH</span>
+
+            <h2>We'd love to hear from you.</h2>
+
+            <p class="contact-description">
+                Have questions, suggestions, or feedback?
+                Feel free to reach out to us. We're always
+                happy to hear from you!
+            </p>
+
+            <div class="contact-details">
+
+                <div class="contact-detail">
+                    <div class="contact-icon">
+                        <i class="ri-mail-line"></i>
+                    </div>
+
+                    <div>
+                        <h4>Email Us</h4>
+                        <p>Send us your questions and feedback.</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <div class="contact-icon">
+                        <i class="ri-message-3-line"></i>
+                    </div>
+
+                    <div>
+                        <h4>Share Your Thoughts</h4>
+                        <p>Your suggestions help us improve.</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <div class="contact-icon">
+                        <i class="ri-global-line"></i>
+                    </div>
+
+                    <div>
+                        <h4>Stay Connected</h4>
+                        <p>Explore HyperSwirl and learn more about cyclones.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        
+
+
+        <!-- RIGHT SIDE: CONTACT FORM -->
+        <div class="contact-form-wrapper">
+
+            <form id="contact-form" class="contact-form">
+
+                <h3>Send Us a Message</h3>
+
+                <p class="form-description">
+                    Fill in the form below and let us know how we can help.
+                </p>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="contact-name">Your Name</label>
+                        <input
+                            type="text"
+                            id="contact-name"
+                            name="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email">Email Address</label>
+                        <input
+                            type="email"
+                            id="contact-email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-subject">Subject</label>
+                    <input
+                        type="text"
+                        id="contact-subject"
+                        name="subject"
+                        placeholder="What is your message about?"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-message">Message</label>
+                    <textarea
+                        id="contact-message"
+                        name="message"
+                        rows="5"
+                        placeholder="Write your message here..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="contact-submit">
+                    Send Message
+                    <i class="ri-arrow-right-line"></i>
+                </button>
+
+                <p id="contact-status" class="contact-status"
+                   role="status" aria-live="polite"></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+  </div>
+
+    <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>Hyper<span>Swirl</span></h2>
+        <p>Your guide to understanding tropical cyclones, exploring their history, tracking storm warnings, and learning how to stay safe before, during, and after a storm.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Explore</h3>
+        <a href="index.html">Home</a>
+        <a href="abtus.html">About Us</a>
+        <a href="hoc.html">History of Cyclones</a>
+        <a href="wnupdates.html">Warnings & Updates</a>
+        <a href="c_wlevels.html">Cyclone & Wind Levels</a>
+        <a href="cprepare.html">Cyclone Preparation</a>
+        <a href="emergencyc.html">Emergency Contacts</a>
+      </div>
+
+      <div class="footer-links">
+        <h3>Get in Touch</h3>
+        <p><i class="ri-mail-line"></i> hyperswirl@gmail.com</p>
+        <p><i class="ri-phone-line"></i> +44 1632 960142</p>
+        <p>Have questions or suggestions? We'd love to hear from you.</p>
+        <div class="social">
+          <a href=""><i class="ri-instagram-line"></i></a>
+          <a href=""><i class="ri-tiktok-fill"></i></a>
+          <a href=""><i class="ri-facebook-circle-fill"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 HyperSwirl. All rights reserved.</p>
+    </div>
+    </footer>
+
+  <script src="java.js"></script>
+</body>
+</html>
+

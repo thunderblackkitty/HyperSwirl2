@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <link rel="icon" type="image/png" href="logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f0f7f8">
+  <title> Home | HyperSwirl</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#" class="navlogo" aria-label="HyperSwirl home">
+        <img src="logo.png" alt="HyperSwirl Logo" class="nav-logo-image">
+        <span>Hyper<span class="logo-accent">Swirl</span></span>
+    </a>
+
+      <div class="navbar" id="navbar">
+        <ul class="navlist">
+          <li class="navitem">
+            <a href="index.html" class="navlinks active" aria-current="page">
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="navitem">
+            <a href="abtus.html" class="navlinks">
+              <span>About Us</span>
+            </a>
+          </li>
+          <li class="navitem">
+            <a href="hoc.html" class="navlinks">
+              <span>History of Cyclones</span>
+            </a>
+          </li>
+          <li class="navitem dropdown" id="safety-dropdown">
+            <button class="navlinks dropdown-trigger" id="dropdown-trigger" type="button" aria-expanded="false" aria-controls="dropdown-menu">
+              <span>Emergency &amp; Safety</span>
+              <i class="ri-arrow-down-s-line dropdown-icon"></i>
+            </button>
+            <ul class="dropdown-menu" id="dropdown-menu">
+              <li><a href="wnupdates.html">Warnings &amp; Updates</a></li>
+              <li><a href="c_wlevels.html">Cyclone &amp; Wind Levels</a></li>
+              <li><a href="cprepare.html">Cyclone Preparation</a></li>
+              <li><a href="emergencyc.html">Emergency Contacts</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="action-btn" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Toggle light and dark mode">
+            <i class="ri-moon-line" id="theme-icon" aria-hidden="true"></i>
+          </button>
+          <a href="login.html" class="login-btn">Login</a>
+        </div>
+
+        <button class="navclose" id="navclose" type="button" aria-label="Close menu">
+          <i class="ri-close-large-line" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <button class="navtoggle" id="navtoggle" type="button"
+              aria-label="Open menu" aria-controls="navbar" aria-expanded="false">
+        <i class="ri-menu-line" aria-hidden="true"></i>
+      </button>
+    </nav>
+  </header>
+
+  <div class="hero-section d-flex align-items-center justify-content-center text-center">
+    <div class="hero-content-card animate-hero">
+      <span class="badge text-uppercase mb-3 px-3 py-2">HyperSwirl</span>
+      <h1 class="hero-title mb-3">Stay Ahead of the Storm.</h1>
+      <p class="hero-subtitle mb-4 mx-auto">Knowledge Today. Safety Tomorrow. <br><br> HyperSwirl is your guide to understanding tropical cyclones, staying informed about storm warnings, and preparing for severe weather. Explore reliable information, safety tips, and essential resources to help you stay one step ahead.</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="#explore" class="btn btn-one">Explore pages <i class="ri-arrow-right-line"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="website-intro" id="about">
+    <div class="intro-content">
+      <span class="intro-label">ABOUT HYPERSWIRL</span>
+      <h2>Understanding Storms.<br> <span>Preparing for the Future.</span></h2>
+      <p> HyperSwirl is an educational platform dedicated to tropical cyclones. We aim to make cyclone information easier to understand by providing knowledge about how cyclones form, their impacts, warning systems, and essential safety measures. Our goal is to help communities become more aware, informed, and prepared before a storm strikes.</p>
+      <a href="abtus.html" class="intro-btn"> Discover Our Purpose <i class="ri-arrow-right-line"></i></a>
+    </div>
+  </div>
+
+  <div class="section" id="formation">
+      <div class="container">
+
+        <div class="section-head">
+          <div>
+            <div class="kicker">01 / The beginning</div>
+            <h2>Where does a cyclone come from?</h2>
+          </div>
+
+          <p>
+            A cyclone does not appear suddenly. It develops when several
+            atmospheric and ocean conditions work together over warm
+            tropical waters.
+          </p>
+        </div>
+
+        <div class="intro-grid">
+
+          <div>
+            <p class="lead">
+              A tropical cyclone is a large rotating weather system
+              with a low-pressure centre and organised thunderstorms.
+              It usually begins as a cluster of showers and thunderstorms
+              over a warm ocean.
+            </p>
+
+            <p>
+              Warm seawater provides heat and moisture. As moist air rises,
+              the air pressure near the surface becomes lower. More air
+              flows towards this low-pressure area, and under the right
+              conditions the system begins to organise and rotate.
+            </p>
+
+            <div class="note">
+              <strong>Remember:</strong> Warm water alone cannot create
+              a cyclone. The atmosphere also needs moisture, a pre-existing
+              disturbance, enough spin and relatively weak vertical wind shear.
+            </div>
+          </div>
+
+          <!-- CYCLONE DIAGRAM -->
+          <div class="diagram">
+            <div>
+              <svg viewBox="0 0 440 280" role="img"
+                aria-label="Illustration of a rotating cyclone above the ocean">
+
+                <defs>
+                  <linearGradient id="sea" x1="0" x2="1">
+                    <stop stop-color="#2d91a0"/>
+                    <stop offset="1" stop-color="#174b69"/>
+                  </linearGradient>
+                </defs>
+
+                <path d="M0 205 Q55 190 110 205 T220 205 T330 205 T440 205 V280 H0Z"
+                  fill="url(#sea)"/>
+
+                <path d="M20 220 Q55 210 90 220 T160 220 T230 220 T300 220 T370 220 T440 220"
+                  fill="none" stroke="#b7e4e7" stroke-width="3" opacity=".65"/>
+
+                <g fill="#fff" opacity=".9">
+                  <ellipse cx="213" cy="91" rx="95" ry="24"/>
+                  <ellipse cx="165" cy="111" rx="58" ry="24"/>
+                  <ellipse cx="260" cy="112" rx="63" ry="25"/>
+                  <ellipse cx="215" cy="69" rx="55" ry="25"/>
+                </g>
+                <g fill="none" stroke="#f3c978" stroke-width="4"
+                  stroke-linecap="round">
+                  <path d="M85 154 C105 96 175 65 239 88 C303 111 315 168 267 185 C225 201 174 172 193 142 C209 116 248 126 246 148"/>
+
+                  <path d="M114 172 C145 213 223 225 284 190"
+                    stroke="#bde7e8" stroke-width="3"/>
+                </g>
+
+                <path d="M214 115 L214 184 M202 172 L214 185 L226 172"
+                  stroke="#f3c978" stroke-width="3" fill="none"/>
+
+                <text x="220" y="252" fill="#fff" font-size="13"
+                  text-anchor="middle">
+                  WARM OCEAN • RISING MOIST AIR • ROTATION
+                </text>
+              </svg>
+
+              <div class="diagram-caption">
+                A simplified illustration — not a satellite image or to-scale model.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </div>
+
+  <div class="section alt" id="conditions">
+      <div class="container">
+
+        <div class="section-head">
+          <div>
+            <div class="kicker">02 / Ingredients</div>
+            <h2>Conditions needed for formation</h2>
+          </div>
+
+          <p>
+            These ingredients make cyclone development possible,
+            although even favourable conditions do not guarantee
+            that a cyclone will form.
+          </p>
+        </div>
+
+        <div class="steps">
+
+          <article class="step-card">
+            <div class="step-num">01</div>
+            <h3>Warm ocean water</h3>
+            <p>
+              Sea-surface temperatures of about 26.5°C or higher provide
+              heat and moisture that help fuel thunderstorms.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-num">02</div>
+            <h3>Moist air</h3>
+            <p>
+              Moisture in the lower and middle atmosphere helps clouds
+              and thunderstorms continue developing.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-num">03</div>
+            <h3>Low pressure disturbance</h3>
+            <p>
+              A pre-existing area of unsettled weather gives air a place
+              to converge and rise. Cyclones do not form from nothing.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-num">04</div>
+            <h3>Earth's rotation</h3>
+            <p>
+              The Coriolis effect helps organise the air into a rotating
+              circulation. Cyclones rarely form very close to the equator.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-num">05</div>
+            <h3>Unstable atmosphere</h3>
+            <p>
+              Air that can keep rising encourages strong thunderstorm
+              clouds to grow vertically.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-num">06</div>
+            <h3>Low wind shear</h3>
+            <p>
+              Winds should not change too sharply in speed or direction
+              with height, so the storm can stay organised.
+            </p>
+          </article>
+
+        </div>
+      </div>
+  </div>
+
+  <div class="section" id="life-cycle">
+      <div class="container">
+
+        <div class="section-head">
+          <div>
+            <div class="kicker">03 / Step by step</div>
+            <h2>How a cyclone develops</h2>
+          </div>
+
+          <p>
+            Follow the sequence from the first unsettled clouds to a
+            mature storm — and finally to its weakening stage.
+          </p>
+        </div>
+
+        <div class="stage-strip">
+
+          <div class="stage">
+            <small>Stage 01</small>
+            <strong>Tropical disturbance</strong>
+            <p>Clusters of showers and thunderstorms form.</p>
+          </div>
+
+          <div class="stage">
+            <small>Stage 02</small>
+            <strong>Tropical depression</strong>
+            <p>A more organised low-pressure circulation develops.</p>
+          </div>
+
+          <div class="stage">
+            <small>Stage 03</small>
+            <strong>Tropical storm / cyclone</strong>
+            <p>Winds strengthen and the system becomes more organised.</p>
+          </div>
+
+          <div class="stage">
+            <small>Stage 04</small>
+            <strong>Mature then weaken</strong>
+            <p>The storm reaches peak strength, then loses energy.</p>
+          </div>
+
+        </div>
+
+        <!-- EXPANDABLE ACCORDION -->
+        <div class="accordion" id="formationAccordion">
+
+          <div class="accordion-item open">
+            <button class="accordion-trigger" aria-expanded="true">
+              <span>Step 1 — Warm water evaporates and air rises</span>
+              <span>＋</span>
+            </button>
+
+            <div class="accordion-panel">
+              The sun warms the ocean. Water evaporates and adds moisture
+              to the air. Warm, moist air rises, leaving lower pressure
+              near the ocean surface. More air begins moving towards this area.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Step 2 — Thunderstorms develop</span>
+              <span>＋</span>
+            </button>
+
+            <div class="accordion-panel">
+              As the rising air cools, water vapour condenses into cloud
+              droplets. Condensation releases heat into the atmosphere,
+              helping air rise and supporting further thunderstorm development.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Step 3 — Air begins to rotate</span>
+              <span>＋</span>
+            </button>
+
+            <div class="accordion-panel">
+              Air flows towards the low-pressure centre. Earth's rotation
+              helps the circulation turn. Thunderstorms begin organising
+              around the centre instead of remaining as separate clusters.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Step 4 — The system strengthens</span>
+              <span>＋</span>
+            </button>
+
+            <div class="accordion-panel">
+              If warm water, moisture and favourable winds continue,
+              the pressure may fall and the winds may become stronger.
+              Curved rainbands can form around the centre.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Step 5 — An eye and eyewall may form</span>
+              <span>＋</span>
+            </button>
+
+            <div class="accordion-panel">
+              In a well-developed cyclone, a relatively calm eye may form
+              at the centre. The eyewall around it contains some of the
+              strongest winds and heaviest rainfall. Not every cyclone
+              has a clearly visible eye.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Step 6 — The cyclone weakens</span>
+              <span>＋</span>
+            </button>
+
+            <div class="accordion-panel">
+              When a cyclone moves over land or cooler water, it is cut off
+              from much of its warm, moist ocean energy. Friction over land
+              and unfavourable atmospheric conditions can also disrupt its
+              circulation, causing it to weaken.
+            </div>
+          </div>
+
+        </div>
+
+        <div class="note">
+          <strong>Important:</strong> The exact naming and wind-speed
+          thresholds used to classify a cyclone differ between
+          meteorological agencies and ocean basins. The stages above
+          explain the general development process.
+        </div>
+
+      </div>
+  </div>
+
+  <div class="explore-section" id="explore">
+    <div class="explore-heading">
+      <span class="section-eyebrow">EXPLORE OUR WEBSITE</span>
+      <h2>Find the information you need.</h2>
+      <p> Explore our different sections to understand cyclones, learn from past events and discover ways to stay safe during emergencies.</p>
+    </div>
+    <div class="pages-marquee">
+      <div class="pages-track">
+        <div class="pages-group">
+          <article class="page-card">
+            <img src="https://i.pinimg.com/736x/ea/95/02/ea95028b359e5c630d51a2a657d1625c.jpg" alt="About Us">
+            <div class="card-content">
+              <span class="page-number">PAGE 01</span>
+              <h3>About Us</h3>
+              <p>Learn about our website, its purpose, objectives and the importance of cyclone awareness.</p>
+              <a href="abtus.html">Learn More →</a>
+            </div>
+          </article>
+
+          <article class="page-card">
+            <img src="https://images.pexels.com/photos/14920363/pexels-photo-14920363.jpeg" alt="Cyclone History">
+            <div class="card-content">
+              <span class="page-number">PAGE 02</span>
+              <h3>Cyclone History</h3>
+              <p> Explore major cyclones that have affected Myanmar and their impacts on communities.</p>
+              <a href="hoc.html">Explore History →</a>
+            </div>
+          </article>
+
+          <article class="page-card">
+            <img src="https://images.pexels.com/photos/12661315/pexels-photo-12661315.jpeg" alt="Cyclones and Wind Levels">
+            <div class="card-content">
+              <span class="page-number">PAGE 03</span>
+              <h3>Cyclones &amp; Wind Levels</h3>
+              <p> Discover how cyclones are classified and how wind speed relates to their intensity.</p>
+              <a href="c_wlevels.html">Explore Wind Levels →</a>
+            </div>
+          </article>
+
+          <article class="page-card">
+            <img src="https://images.pexels.com/photos/5149757/pexels-photo-5149757.jpeg" alt="Cyclone Preparation">
+            <div class="card-content">
+              <span class="page-number">PAGE 04</span>
+              <h3>Cyclone Preparation</h3>
+              <p> Find out what to do before, during and after a cyclone to reduce risks.</p>
+              <a href="cprepare.html">Get Prepared →</a>
+            </div>
+          </article>
+
+          <article class="page-card">
+            <img src="https://images.pexels.com/photos/6034783/pexels-photo-6034783.jpeg" alt="Emergency Contacts">
+            <div class="card-content">
+              <span class="page-number">PAGE 05</span>
+              <h3>Emergency Contacts</h3>
+              <p> Find important emergency contact information and useful official resources.</p>
+              <a href="emergencyc.html">Find Contacts →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>Hyper<span>Swirl</span></h2>
+        <p>Your guide to understanding tropical cyclones, exploring their history, tracking storm warnings, and learning how to stay safe before, during, and after a storm.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Explore</h3>
+        <a href="index.html">Home</a>
+        <a href="abtus.html">About Us</a>
+        <a href="hoc.html">History of Cyclones</a>
+        <a href="wnupdates.html">Warnings & Updates</a>
+        <a href="c_wlevels.html">Cyclone & Wind Levels</a>
+        <a href="cprepare.html">Cyclone Preparation</a>
+        <a href="emergencyc.html">Emergency Contacts</a>
+      </div>
+
+      <div class="footer-links">
+        <h3>Get in Touch</h3>
+        <p><i class="ri-mail-line"></i> hyperswirl@gmail.com</p>
+        <p><i class="ri-phone-line"></i> +44 1632 960142</p>
+        <p>Have questions or suggestions? We'd love to hear from you.</p>
+        <div class="social">
+          <a href=""><i class="ri-instagram-line"></i></a>
+          <a href=""><i class="ri-tiktok-fill"></i></a>
+          <a href=""><i class="ri-facebook-circle-fill"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 HyperSwirl. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="java.js"></script>
+
+</body>
+</html>
+

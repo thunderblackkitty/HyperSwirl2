@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cyclone Preparation | HyperSwirl</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#" class="navlogo" aria-label="HyperSwirl home">
+        <img src="logo.png" alt="HyperSwirl Logo" class="nav-logo-image">
+        <span>Hyper<span class="logo-accent">Swirl</span></span>
+    </a>
+
+      <div class="navbar" id="navbar">
+        <ul class="navlist">
+          <li class="navitem">
+            <a href="index.html" class="navlinks" aria-current="page">
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="navitem">
+            <a href="abtus.html" class="navlinks">
+              <span>About Us</span>
+            </a>
+          </li>
+          <li class="navitem">
+            <a href="hoc.html" class="navlinks">
+              <span>History of Cyclones</span>
+            </a>
+          </li>
+          <li class="navitem dropdown" id="safety-dropdown">
+            <button class="navlinks active dropdown-trigger" id="dropdown-trigger" type="button" aria-expanded="false" aria-controls="dropdown-menu">
+              <span>Emergency &amp; Safety</span>
+              <i class="ri-arrow-down-s-line dropdown-icon"></i>
+            </button>
+            <ul class="dropdown-menu" id="dropdown-menu">
+              <li><a href="wnupdates.html">Warnings &amp; Updates</a></li>
+              <li><a href="c_wlevels.html">Cyclone &amp; Wind Levels</a></li>
+              <li><a href="cprepare.html">Cyclone Preparation</a></li>
+              <li><a href="emergencyc.html">Emergency Contacts</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="action-btn" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Toggle light and dark mode">
+            <i class="ri-moon-line" id="theme-icon" aria-hidden="true"></i>
+          </button>
+          <a href="login.html" class="login-btn">Login</a>
+        </div>
+
+        <button class="navclose" id="navclose" type="button" aria-label="Close menu">
+          <i class="ri-close-large-line" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <button class="navtoggle" id="navtoggle" type="button"
+              aria-label="Open menu" aria-controls="navbar" aria-expanded="false">
+        <i class="ri-menu-line" aria-hidden="true"></i>
+      </button>
+    </nav>
+    </header>
+
+    <main class="prep-page">
+    <section class="prep-hero">
+        <div class="prep-hero-content">
+            <span class="prep-label"><i class="bi bi-shield-check" aria-hidden="true"></i> EMERGENCY &amp; SAFETY</span>
+            <h1>Be Prepared.<br>Stay Safe.</h1>
+            <p>Cyclones can bring powerful winds, heavy rain, flooding, and storm surges. Preparing early helps protect you, your family, and your community.</p>
+            <div class="prep-hero-actions">
+                <a href="#preparation" class="prep-button">Start preparing <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+                <button class="prep-print-button" type="button" id="print-guide">
+                    <i class="bi bi-printer" aria-hidden="true"></i> Print guide
+                </button>
+            </div>
+        </div>
+        <div class="prep-hero-icon" aria-hidden="true"><i class="bi bi-cloud-lightning-rain"></i></div>
+    </section>
+
+    <section class="prep-intro">
+        <h2>Why prepare before a cyclone?</h2>
+        <p>Warnings may leave little time to act. A household plan, essential supplies, and knowledge of safe routes can reduce confusion and help everyone make safer decisions. Follow local authorities and official weather updates.</p>
+    </section>
+
+    <section class="prep-steps" id="preparation" aria-labelledby="steps-title">
+        <div class="prep-heading">
+            <span>YOUR SAFETY GUIDE</span>
+            <h2 id="steps-title">How to prepare</h2>
+            <p>Take these steps before a cyclone approaches.</p>
+        </div>
+        <div class="prep-grid">
+            <article class="prep-card">
+                <div class="prep-card-icon"><i class="bi bi-broadcast" aria-hidden="true"></i></div>
+                <span class="step-number">01</span>
+                <h3>Stay informed</h3>
+                <p>Keep track of official forecasts, warnings, and evacuation announcements.</p>
+                <ul>
+                    <li>Listen to trusted local news and official channels.</li>
+                    <li>Charge your phone and keep a battery-powered radio if available.</li>
+                    <li>Act promptly when authorities issue instructions.</li>
+                </ul>
+            </article>
+            <article class="prep-card">
+                <div class="prep-card-icon"><i class="bi bi-house-check" aria-hidden="true"></i></div>
+                <span class="step-number">02</span>
+                <h3>Secure your home</h3>
+                <p>Reduce hazards around your home before strong winds and rain arrive.</p>
+                <ul>
+                    <li>Bring loose objects indoors and secure doors and windows.</li>
+                    <li>Move important belongings to a higher, dry place.</li>
+                    <li>Stay away from damaged electrical wires.</li>
+                </ul>
+            </article>
+            <article class="prep-card">
+                <div class="prep-card-icon"><i class="bi bi-backpack" aria-hidden="true"></i></div>
+                <span class="step-number">03</span>
+                <h3>Pack essential supplies</h3>
+                <p>Keep an emergency kit somewhere easy to reach if you need to leave quickly.</p>
+                <ul>
+                    <li>Water, shelf-stable food, and a first-aid kit.</li>
+                    <li>Medicines, flashlight, batteries, and power bank.</li>
+                    <li>Important documents in a waterproof bag.</li>
+                </ul>
+            </article>
+            <article class="prep-card">
+                <div class="prep-card-icon"><i class="bi bi-people" aria-hidden="true"></i></div>
+                <span class="step-number">04</span>
+                <h3>Make a family plan</h3>
+                <p>Agree on how to reach each other and where to meet if you become separated.</p>
+                <ul>
+                    <li>Choose an out-of-area family contact.</li>
+                    <li>Pick a safe meeting point and share it with everyone.</li>
+                    <li>Write down emergency contacts.</li>
+                </ul>
+            </article>
+            <article class="prep-card">
+                <div class="prep-card-icon"><i class="bi bi-signpost-split" aria-hidden="true"></i></div>
+                <span class="step-number">05</span>
+                <h3>Know where to go</h3>
+                <p>Plan a safe route and learn where your nearest official shelter is located.</p>
+                <ul>
+                    <li>Plan an alternate route in case roads are blocked.</li>
+                    <li>Arrange transport for anyone who may need help.</li>
+                    <li>Never travel through floodwater.</li>
+                </ul>
+            </article>
+            <article class="prep-card">
+                <div class="prep-card-icon"><i class="bi bi-heart-pulse" aria-hidden="true"></i></div>
+                <span class="step-number">06</span>
+                <h3>Plan for everyone's needs</h3>
+                <p>Consider children, older adults, people with disabilities, and pets.</p>
+                <ul>
+                    <li>Pack needed medicines and mobility aids.</li>
+                    <li>Make arrangements for transport and assistance.</li>
+                    <li>Include pet food and carriers where needed.</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <section class="prep-timeline" aria-labelledby="timeline-title">
+        <div class="prep-heading">
+            <span>IMPORTANT SAFETY INFORMATION</span>
+            <h2 id="timeline-title">Before, during, and after</h2>
+            <p>Follow official instructions at every stage.</p>
+        </div>
+        <div class="timeline-grid">
+            <article class="timeline-card">
+                <div class="timeline-icon"><i class="bi bi-calendar-check" aria-hidden="true"></i></div>
+                <h3>Before</h3>
+                <ul>
+                    <li>Prepare your kit and charge essential devices.</li>
+                    <li>Secure your home and keep important items dry.</li>
+                    <li>Know your evacuation route and follow official warnings.</li>
+                </ul>
+            </article>
+            <article class="timeline-card">
+                <div class="timeline-icon"><i class="bi bi-cloud-lightning" aria-hidden="true"></i></div>
+                <h3>During</h3>
+                <ul>
+                    <li>Stay in a sturdy shelter, away from windows.</li>
+                    <li>Listen for official updates and instructions.</li>
+                    <li>Avoid floodwater, coastlines, and downed power lines.</li>
+                    <li>Do not go outside during a temporary lull in the storm.</li>
+                </ul>
+            </article>
+            <article class="timeline-card">
+                <div class="timeline-icon"><i class="bi bi-house-check-fill" aria-hidden="true"></i></div>
+                <h3>After</h3>
+                <ul>
+                    <li>Wait until authorities say it is safe to go outside.</li>
+                    <li>Avoid damaged buildings and fallen wires.</li>
+                    <li>Use safe drinking water and report hazards to authorities.</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <section class="emergency-kit" id="checklist" aria-labelledby="kit-title">
+        <div class="kit-content">
+            <span>BE READY BEFORE IT HAPPENS</span>
+            <h2 id="kit-title">Emergency kit checklist</h2>
+            <p>Check off the supplies you have prepared. Your checklist is saved on this device.</p>
+            <div class="kit-progress" aria-live="polite">
+                <span id="kit-progress-text">0 of 10 items ready</span>
+                <span class="kit-progress-track" aria-hidden="true"><span id="kit-progress-bar"></span></span>
+            </div>
+            <div class="kit-list">
+                <label class="kit-item"><input type="checkbox" data-kit-item><span>Safe drinking water</span></label>
+                <label class="kit-item"><input type="checkbox" data-kit-item><span>Non-perishable food</span></label>
+                <label class="kit-item"><input type="checkbox" data-kit-item><span>First-aid kit and essential medicines</span></label>
+                <label class="kit-item"><input type="checkbox" data-kit-item><span>Flashlight, spare batteries, and radio</span></label>
+                <label class="kit-item"><input type="checkbox" data-kit-item><span>Charged phone and power bank</span></label>
+                <label class="kit-item"><input type="checkbox" data-kit-item><span>Documents in a waterproof bag</span></label>
+                <label class="kit-item"><input type="checkbox" data-kit-item><span>Hygiene supplies and sturdy shoes</span></label>
+                <label class="kit-item"><input type="checkbox" data-kit-item><span>Cash, keys, and written emergency contacts</span></label>
+                <label class="kit-item"><input type="checkbox" data-kit-item><span>Supplies for babies or family members needing assistance</span></label>
+                <label class="kit-item"><input type="checkbox" data-kit-item><span>Pet food and supplies, if needed</span></label>
+            </div>
+            <button class="kit-reset" type="button" id="reset-checklist">
+                <i class="bi bi-arrow-counterclockwise" aria-hidden="true"></i> Reset checklist
+            </button>
+        </div>
+        <div class="kit-icon" aria-hidden="true"><i class="bi bi-backpack4"></i></div>
+    </section>
+
+    <section class="prep-message">
+        <i class="bi bi-shield-fill-check" aria-hidden="true"></i>
+        <h2>Preparation saves lives.</h2>
+        <p>Stay alert, follow official advice, and put safety first. Keep emergency contacts close and help neighbors who may need assistance.</p>
+        <a href="emergencyc.html" class="prep-button">View emergency contacts <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+    </section>
+    </main>
+
+    <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>Hyper<span>Swirl</span></h2>
+        <p>Your guide to understanding tropical cyclones, exploring their history, tracking storm warnings, and learning how to stay safe before, during, and after a storm.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Explore</h3>
+        <a href="index.html">Home</a>
+        <a href="abtus.html">About Us</a>
+        <a href="hoc.html">History of Cyclones</a>
+        <a href="wnupdates.html">Warnings & Updates</a>
+        <a href="c_wlevels.html">Cyclone & Wind Levels</a>
+        <a href="cprepare.html">Cyclone Preparation</a>
+        <a href="emergencyc.html">Emergency Contacts</a>
+      </div>
+
+      <div class="footer-links">
+        <h3>Get in Touch</h3>
+        <p><i class="ri-mail-line"></i> hyperswirl@gmail.com</p>
+        <p><i class="ri-phone-line"></i> +44 1632 960142</p>
+        <p>Have questions or suggestions? We'd love to hear from you.</p>
+        <div class="social">
+          <a href=""><i class="ri-instagram-line"></i></a>
+          <a href=""><i class="ri-tiktok-fill"></i></a>
+          <a href=""><i class="ri-facebook-circle-fill"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 HyperSwirl. All rights reserved.</p>
+    </div>
+    </footer>
+
+  <script src="java.js"></script>
+</body>
+</html>
